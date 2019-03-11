@@ -1,0 +1,33 @@
+{
+  "name": "gulp-cipher-json",
+  "version": "1.0.0",
+  "description": "(Un)cipher json values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/nbarikipoulos/gulp-cipher-json#readme",
+  "author": "Nikolaos Barikipoulos <nikolaos.barikipoulos@outlook.fr>",
+  "license": "MIT",
+  "keywords": [
+    "gulpplugin",
+    "json",
+    "crypto",
+    "cipher",
+    "encrypt",
+    "decrypt",
+    "aes256"
+  ],
+  "dependencies": {
+    "json-cipher-value": "^1.1.0",
+    "plugin-error": "^1.0.1",
+    "through2": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nbarikipoulos/gulp-cipher-json.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
