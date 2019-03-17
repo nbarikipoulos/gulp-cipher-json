@@ -36,7 +36,7 @@ module.exports = (action, secret, options) => {
     if ( action !== 'encrypt' && action !=='decrypt' ) {
       cb(new PluginError(
         PLUGIN_NAME,
-        'action option must be set either to \'crypt\' or \'encrypt\''
+        'action option must be set either to \'encrypt\' or \'decrypt\''
       ));
     }
     if ( undefined === secret ) {
@@ -54,7 +54,7 @@ module.exports = (action, secret, options) => {
 
       let cryptObject = createCryptObject(secret, options);
 
-      let encryptedObject = cryptObject[`${action}`].call(
+      let encryptedObject = cryptObject[action].call(
         cryptObject,
         JSON.parse(file.contents.toString())
       );
