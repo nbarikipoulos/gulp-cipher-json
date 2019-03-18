@@ -38,7 +38,7 @@ __options__: [json-cipher-value](https://github.com/nbarikipoulos/json-cipher-va
 
 ## Credits
 
-- Nikolaos Barikipoulos ([nbarikipoulos](https://github.com/nbarikipoulos))
+- Nicolas Barriquand ([nbarikipoulos](https://github.com/nbarikipoulos))
 
 ## License
 
