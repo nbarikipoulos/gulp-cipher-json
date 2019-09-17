@@ -1,6 +1,6 @@
 {
   "name": "gulp-cipher-json",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "(Un)cipher json values",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nbarikipoulos/gulp-cipher-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nbarikipoulos/gulp-cipher-json/issues"
   },
   "engines": {
     "node": ">=8.0.0"
