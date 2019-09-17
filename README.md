@@ -1,5 +1,7 @@
 # gulp-cipher-json
+
 [![NPM version][npm-image]][npm-url]
+[![JavaScript Style Guide][standard-image]][standard-url]
 
 | Package | gulp-cipher-value |
 | ------- | ----------------- |
@@ -18,13 +20,13 @@ npm install gulp-cipher-json --save-dev
 const gulp = require('gulp');
 const cipherJSON = require('gulp-cipher-json');
 
-gulp.task('default', () => gulp.src('src/data/*.json')
+gulp.task('default', _ => gulp.src('src/data/*.json')
   .pipe(cipherJSON(
     'decrypt',
     'my secret password from anywhere'
   ))
   .pipe(gulp.dest('dist/data'))
-);
+)
 ```
 
 ## cipherJSON(action, secret, [options])
@@ -46,3 +48,5 @@ This module is MIT licensed. See [LICENSE](./LICENSE.md).
 
 [npm-url]: https://www.npmjs.com/package/gulp-cipher-json
 [npm-image]: https://img.shields.io/npm/v/gulp-cipher-json.svg
+[standard-url]: https://standardjs.com
+[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg

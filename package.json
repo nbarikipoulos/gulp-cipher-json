@@ -1,10 +1,10 @@
 {
   "name": "gulp-cipher-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "(Un)cipher json values",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "homepage": "https://github.com/nbarikipoulos/gulp-cipher-json#readme",
   "author": "Nicolas Barriquand <nicolas.barriquand@outlook.fr>",
@@ -29,5 +29,8 @@
   },
   "engines": {
     "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.0"
   }
 }
