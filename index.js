@@ -1,11 +1,11 @@
-/*! Copyright (c) 2019 Nicolas Barriquand <nicolas.barriquand@outlook.fr>. MIT licensed. */
+/*! Copyright (c) 2019-2020 Nicolas Barriquand <nicolas.barriquand@outlook.fr>. MIT licensed. */
 
 'use strict'
 
 const through = require('through2')
 const PluginError = require('plugin-error')
 
-const createCryptObject = require('json-cipher-value')
+const createCipherObject = require('json-cipher-value')
 
 const PLUGIN_NAME = 'gulp-cipher-json'
 
@@ -43,17 +43,12 @@ module.exports = (action, secret, options) => {
     //
 
     if (file.isBuffer()) {
-      const cryptObject = createCryptObject(secret, options)
+      const cipherObject = createCipherObject(secret, options)
 
-      const encryptedObject = cryptObject[action](
-        JSON.parse(file.contents.toString())
-      )
+      const content = JSON.parse(file.contents.toString())
+      const result = cipherObject.perform(action, content)
 
-      file.contents = Buffer.from(JSON.stringify(
-        encryptedObject,
-        null,
-        2
-      ))
+      file.contents = Buffer.from(JSON.stringify(result, null, 2))
 
       return cb(null, file)
     }

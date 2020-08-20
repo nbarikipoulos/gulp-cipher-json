@@ -1,7 +1,7 @@
 {
   "name": "gulp-cipher-json",
   "version": "1.0.2",
-  "description": "(Un)cipher json values",
+  "description": "(De)cipher json values",
   "main": "index.js",
   "scripts": {
     "test": "standard"
@@ -14,12 +14,11 @@
     "json",
     "crypto",
     "cipher",
-    "encrypt",
-    "decrypt",
+    "decipher",
     "aes256"
   ],
   "dependencies": {
-    "json-cipher-value": "^1.1.0",
+    "json-cipher-value": "^2.0.0-beta.0",
     "plugin-error": "^1.0.1",
     "through2": "^3.0.1"
   },
