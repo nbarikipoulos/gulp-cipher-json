@@ -2,7 +2,7 @@
 
 'use strict'
 
-const through = require('through2')
+const stream = require('stream')
 const PluginError = require('plugin-error')
 
 const createCipherObject = require('json-cipher-value')
@@ -10,7 +10,8 @@ const createCipherObject = require('json-cipher-value')
 const PLUGIN_NAME = 'gulp-cipher-json'
 
 module.exports = (action, secret, options) => {
-  return through.obj((file, enc, cb) => {
+  const transform = new stream.Transform({ objectMode: true })
+  transform._transform = (file, enc, cb) => {
     if (file.isNull()) {
       // Do nothing
       return cb(null, file)
@@ -52,5 +53,6 @@ module.exports = (action, secret, options) => {
 
       return cb(null, file)
     }
-  })
+  }
+  return transform
 }
