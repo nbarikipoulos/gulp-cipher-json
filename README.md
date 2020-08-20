@@ -7,7 +7,7 @@
 
 | Package | gulp-cipher-value |
 | ------- | ----------------- |
-| Description | Gulp wrapper for [json-cipher-value](https://github.com/nbarikipoulos/json-cipher-value). (Un)cipher values of json files retaining their types. |
+| Description | Gulp wrapper for [json-cipher-value](https://github.com/nbarikipoulos/json-cipher-value). (De)cipher values of json files remaining their types. |
 
 ## Install
 
@@ -19,12 +19,12 @@ npm install gulp-cipher-json --save-dev
 
 ```js
 
-const gulp = require('gulp');
-const cipherJSON = require('gulp-cipher-json');
+const gulp = require('gulp')
+const cipherJSON = require('gulp-cipher-json')
 
 gulp.task('default', _ => gulp.src('src/data/*.json')
   .pipe(cipherJSON(
-    'decrypt',
+    'encrypt',
     'my secret password from anywhere'
   ))
   .pipe(gulp.dest('dist/data'))
