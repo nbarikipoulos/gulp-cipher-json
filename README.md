@@ -2,8 +2,9 @@
 
 [![NPM version][npm-image]][npm-url]
 [![JavaScript Style Guide][standard-image]][standard-url]
-[![Dependency Status][david-image]][david-url]
-[![devDependency Status][david-dev-image]][david-dev-url]
+
+| :exclamation: THIS PACKAGE IS NOT LONGER MAINTAINED |
+|-----------------------------------------|
 
 | Package | gulp-cipher-value |
 | ------- | ----------------- |
@@ -52,7 +53,3 @@ This module is MIT licensed. See [LICENSE](./LICENSE.md).
 [npm-image]: https://img.shields.io/npm/v/gulp-cipher-json.svg
 [standard-url]: https://standardjs.com
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
-[david-image]: https://img.shields.io/david/nbarikipoulos/gulp-cipher-json.svg
-[david-url]: https://david-dm.org/nbarikipoulos/gulp-cipher-json
-[david-dev-image]: https://img.shields.io/david/dev/nbarikipoulos/gulp-cipher-json.svg
-[david-dev-url]: https://david-dm.org/nbarikipoulos/gulp-cipher-json?type=dev
